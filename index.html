@@ -43,7 +43,7 @@
   <script>
     function fetchData(managerId) {
       // Make the API request to your server-side proxy
-      const url = `/.netlify/functions/proxy?url=https://fantasy.premierleague.com/api/entry/${managerId}/`;
+      const url = `/api/entry/${managerId}/`;
 
       fetch(url)
         .then(response => response.json())
